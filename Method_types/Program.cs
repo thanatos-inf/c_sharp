@@ -68,5 +68,5 @@ string Method4_1(int count, string text)
     return result;
 }
 
-string res = Method4(10, "Привет ");
+string res = Method4_1(10, "Привет ");
 Console.WriteLine(res);
