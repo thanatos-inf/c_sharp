@@ -9,13 +9,13 @@ void Method1()
 
 
 // Вид 2. Методы которые что-то принимают, но ничего не возвращают. 
-void Method2 (string msg)
+void Method2(string msg)
 {
     Console.WriteLine(msg);
 }
 //Method2(msg: "Текст сообщения.");
 
-void Method2_1 (string msg, int count)
+void Method2_1(string msg, int count)
 {
     int i = 0;
     while (i < count)
@@ -50,6 +50,20 @@ string Method4(int count, string text)
     {
         result = result + text;
         i++;
+    }
+    return result;
+}
+
+//string res = Method4(10, "Привет ");
+//Console.WriteLine(res);
+
+string Method4_1(int count, string text)
+{
+
+    string result = String.Empty;
+    for (int i = 0; i < count; i++)
+    {
+        result = result + text;
     }
     return result;
 }
